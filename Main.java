@@ -34,7 +34,7 @@ public class Main {
      * main is the entry or pri·mor·di·al code block for Java
      */
     static public void main(String[] args) { // open squig begins the method
-        HashMap<Integer, Runner> options = new HashMap<Integer, Runner>();
+        HashMap<Integer, Blueprint> options = new HashMap<Integer, Blueprint>();
         options.put(1, new Test("Option 1: Test Option"));
         menu("Menu", options); // 'coder' defined method/function call to a different code block
     }
@@ -42,7 +42,7 @@ public class Main {
     /**
      * menu - method that is activated by main, this will perform Java code
      */
-    public static void menu(String banner, HashMap<Integer, Runner> options) {
+    public static void menu(String banner, HashMap<Integer, Blueprint> options) {
         System.out.println(banner);
         Scanner scanner = new Scanner(System.in);
         

@@ -1,7 +1,7 @@
-public abstract class Runner {
+public abstract class Blueprint {
     String optionsText;
 
-    public Runner(String optionsText) {
+    public Blueprint(String optionsText) {
         this.optionsText = optionsText;
     }
 
