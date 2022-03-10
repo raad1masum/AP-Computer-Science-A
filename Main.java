@@ -35,7 +35,7 @@ public class Main {
      */
     static public void main(String[] args) { // open squig begins the method
         HashMap<Integer, Runner> options = new HashMap<Integer, Runner>();
-        options.put(1, new Runner("Option 1: Test Option"));
+        options.put(1, new Test("Option 1: Test Option"));
         menu("Menu", options); // 'coder' defined method/function call to a different code block
     }
 
