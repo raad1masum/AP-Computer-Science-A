@@ -8,6 +8,8 @@ Level: Easy
 Imports allow you to use code already written by others.  
 Java has many standard libraries. The names around the dots in import often give you a hint to the originator of the code.
  */
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner; //java library for user input
 
 /**
@@ -32,13 +34,28 @@ public class Main {
      * main is the entry or pri·mor·di·al code block for Java
      */
     static public void main(String[] args) { // open squig begins the method
-        menu(); // 'coder' defined method/function call to a different code block
-    } // close squig ends the method. What did this method do?
+        HashMap<Integer, Test> options = new HashMap<Integer, Test>();
+        options.put(1, new Test());
+        menu("Menu", options); // 'coder' defined method/function call to a different code block
+    }
 
     /**
      * menu - method that is activated by main, this will perform Java code
      */
-    public static void menu() {
+    public static void menu(String banner, HashMap<Integer, Test> options) {
+        System.out.println(banner);
+        Scanner scanner = new Scanner(System.in);
+        
+        for (int i = 1; i <= options.size(); i++) {
+            System.out.println(i + ": " + options.get(i).toString());
+            // System.out.println(i + ": " + options.get("Option " + i));
+        }
+
+        System.out.print("Option> ");
+        int selection = scanner.nextInt();
+        options.get(selection).run();
+        // System.out.println(options.get(selection).toString());
+        /*
         // Primitive types: AP CSA Unit 1
         int selection; // user selection variable of type Inteteger
 
@@ -125,6 +142,7 @@ public class Main {
         // Repeating an operation is often called iteration. Recursion is a special form
         // of iteration.
         menu();
+        */
     }
 
 }
