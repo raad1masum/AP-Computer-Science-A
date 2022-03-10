@@ -56,8 +56,6 @@ public class Main {
         System.out.print("Option> ");
         int selection = scanner.nextInt();
         options.get(selection).run();
-
         scanner.close();
     }
-
 }
