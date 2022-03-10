@@ -8,7 +8,6 @@ Level: Easy
 Imports allow you to use code already written by others.  
 Java has many standard libraries. The names around the dots in import often give you a hint to the originator of the code.
  */
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner; //java library for user input
 
@@ -58,6 +57,8 @@ public class Main {
         System.out.print("Option> ");
         int selection = scanner.nextInt();
         options.get(selection).run();
+
+        scanner.close();
         // System.out.println(options.get(selection).toString());
         /*
         // Primitive types: AP CSA Unit 1
