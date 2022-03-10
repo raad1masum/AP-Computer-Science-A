@@ -47,14 +47,18 @@ public class Main {
      */
     public static void menu(String banner, HashMap<Integer, Blueprint> options) {
         System.out.println(banner);
-        Scanner scanner = new Scanner(System.in);
         
         for (int i = 1; i <= options.size(); i++) {
             System.out.println(i + ": " + options.get(i).toString());
         }
-
+        
         System.out.print("Option> ");
-        int selection = scanner.nextInt();
-        options.get(selection).run();
+        try {
+            Scanner scanner = new Scanner(System.in);
+            int selection = scanner.nextInt();
+            options.get(selection).run();
+        } catch (Exception e) {
+            System.out.println("Invalid Input");
+        }
     }
 }
