@@ -1,13 +1,11 @@
-public class Runner {
+public abstract class Runner {
     String optionsText;
 
     public Runner(String optionsText) {
         this.optionsText = optionsText;
     }
 
-    public void run() {
-        System.out.println("running bruh");
-    }
+    public abstract void run();
 
     @Override
     public String toString() {
