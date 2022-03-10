@@ -34,15 +34,15 @@ public class Main {
      * main is the entry or pri·mor·di·al code block for Java
      */
     static public void main(String[] args) { // open squig begins the method
-        HashMap<Integer, Test> options = new HashMap<Integer, Test>();
-        options.put(1, new Test());
+        HashMap<Integer, Runner> options = new HashMap<Integer, Runner>();
+        options.put(1, new Runner("Option 1: Test Option"));
         menu("Menu", options); // 'coder' defined method/function call to a different code block
     }
 
     /**
      * menu - method that is activated by main, this will perform Java code
      */
-    public static void menu(String banner, HashMap<Integer, Test> options) {
+    public static void menu(String banner, HashMap<Integer, Runner> options) {
         System.out.println(banner);
         Scanner scanner = new Scanner(System.in);
         
