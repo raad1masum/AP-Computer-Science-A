@@ -38,8 +38,8 @@ public class Main {
     static public void main(String[] args) { // open squig begins the method
         HashMap<Integer, Blueprint> options = new HashMap<Integer, Blueprint>();
         options.put(0, new Exit("Exit"));
-        options.put(1, new Test("Option 1: Test Option"));
-        options.put(2, new TestNew("Option 2: Test New Option"));
+        options.put(1, new Test("Test Option"));
+        options.put(2, new TestNew("Test New Option"));
 
         while (true) {
             menu("Menu", options);
