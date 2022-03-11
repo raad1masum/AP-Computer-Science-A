@@ -32,6 +32,7 @@ public class Main {
      */
     static public void main(String[] args) { // open squig begins the method
         HashMap<Integer, Blueprint> options = new HashMap<Integer, Blueprint>();
+        options.put(0, new Exit("Exit"));
         options.put(1, new Test("Option 1: Test Option"));
         options.put(2, new TestNew("Option 2: Test New Option"));
 
@@ -48,7 +49,7 @@ public class Main {
     public static void menu(String banner, HashMap<Integer, Blueprint> options) {
         System.out.println(banner);
         
-        for (int i = 1; i <= options.size(); i++) {
+        for (int i = 0; i < options.size(); i++) {
             System.out.println(i + ": " + options.get(i).toString());
         }
         
