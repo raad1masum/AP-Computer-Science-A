@@ -41,9 +41,8 @@ public class Main {
         options.put(1, new Test("Test Option"));
         options.put(2, new TestNew("Test New Option"));
 
-        while (true) {
+        while (true)
             menu("Menu", options);
-        }
     }
 
     /**
