@@ -9,6 +9,11 @@ Java has many standard libraries. The names around the dots in import often give
 import java.util.HashMap;
 import java.util.Scanner; //java library for user input
 
+import src.Blueprint;
+import src.Exit;
+import src.Test;
+import src.TestNew;
+
 /**
  * Main - entry point class for this project
  * 1.'C' and Java have a main function/method that is the ENTRY into code

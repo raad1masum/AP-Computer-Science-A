@@ -1,3 +1,4 @@
+package src;
 public class Test extends Blueprint {
     public Test(String optionsText) {
         super(optionsText);
