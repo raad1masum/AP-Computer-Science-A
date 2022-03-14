@@ -2,7 +2,7 @@
 
 ## Code Blocks
 ### Menu
-```
+```java
 public static void menu(String banner, HashMap<Integer, Blueprint> options) {
    System.out.println(banner);
         
@@ -21,7 +21,7 @@ public static void menu(String banner, HashMap<Integer, Blueprint> options) {
 }
 ```
 ### Int By Reference
-```
+```java
 package src;
 
 public class IntByReference extends Blueprint {
@@ -63,7 +63,7 @@ public class IntByReference extends Blueprint {
 ```
 
 ### Matrix
-```
+```java
 package src;
 
 public class Matrix extends Blueprint {
