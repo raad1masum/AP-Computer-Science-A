@@ -32,12 +32,13 @@ public class Main {
      * main - entry point method for this project
      * main is the entry or pri·mor·di·al code block for Java
      */
-    static public void main(String[] args) { // open squig begins the method
+    static public void main(String[] args) {
         HashMap<Integer, Blueprint> options = new HashMap<Integer, Blueprint>();
         options.put(0, new Exit("Exit"));
         options.put(1, new Test("Test Option"));
         options.put(2, new TestNew("Test New Option"));
         options.put(3, new IntByReference("Int By Reference", 0));
+        options.put(4, new Matrix("Matrix", new int[][] {{0},{0}}));
 
         while (true)
             menu("Menu", options);
