@@ -9,10 +9,7 @@ Java has many standard libraries. The names around the dots in import often give
 import java.util.HashMap;
 import java.util.Scanner; //java library for user input
 
-import src.Blueprint;
-import src.Exit;
-import src.Test;
-import src.TestNew;
+import src.*;
 
 /**
  * Main - entry point class for this project
@@ -40,6 +37,7 @@ public class Main {
         options.put(0, new Exit("Exit"));
         options.put(1, new Test("Test Option"));
         options.put(2, new TestNew("Test New Option"));
+        options.put(3, new IntByReference("Int By Reference", 0));
 
         while (true)
             menu("Menu", options);
@@ -54,7 +52,7 @@ public class Main {
         System.out.println(banner);
         
         for (int i = 0; i < options.size(); i++) {
-            System.out.println(i + ": " + options.get(i).toString());
+            System.out.println(i + ": " + options.get(i).getOptionsText());
         }
         
         System.out.print("Option> ");

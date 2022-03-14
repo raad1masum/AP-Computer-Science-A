@@ -8,8 +8,7 @@ public abstract class Blueprint {
 
     public abstract void run();
 
-    @Override
-    public String toString() {
+    public String getOptionsText() {
         return optionsText;
     }
 }
