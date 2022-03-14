@@ -131,6 +131,11 @@ public class Matrix extends Blueprint {
 }
 ```
 
+## AP Exam Plan
+- [ ] Barron's Book
+- [ ] Random online tests
+- [ ] Code Code Code
+
 ## Notes
 
 AP Computer Science A Journal
