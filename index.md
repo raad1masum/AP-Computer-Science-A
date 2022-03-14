@@ -1,7 +1,9 @@
 ## AP-Computer-Science-A
 
 ## Code Blocks
+
 > [Repl Link](https://replit.com/@SamosaSauce/AP-Computer-Science-A-1)
+
 ### [Menu](https://github.com/raad1masum/AP-Computer-Science-A/blob/main/Main.java)
 ```java
 public static void menu(String banner, HashMap<Integer, Blueprint> options) {
