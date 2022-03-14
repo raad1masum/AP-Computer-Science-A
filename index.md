@@ -1,6 +1,6 @@
 ## AP-Computer-Science-A
 
-## Directory
+## Notes
 
 AP Computer Science A Journal
 Raadwan Masum
