@@ -8,6 +8,7 @@ public class IntByReference extends Blueprint {
         this.value = value;
     }
 
+    @Override
     public String toString() {
         return Integer.toString(this.value);
     }
