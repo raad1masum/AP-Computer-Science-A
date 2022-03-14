@@ -1,5 +1,136 @@
 ## AP-Computer-Science-A
 
+## Code Blocks
+### Menu
+```
+public static void menu(String banner, HashMap<Integer, Blueprint> options) {
+   System.out.println(banner);
+        
+   for (int i = 0; i < options.size(); i++) {
+      System.out.println(i + ": " + options.get(i).getOptionsText());
+   }
+        
+   System.out.print("Option> ");
+   try {
+      Scanner scanner = new Scanner(System.in);
+      int selection = scanner.nextInt();
+      options.get(selection).run();
+   } catch (Exception e) {
+      System.out.println("Invalid Input");
+   }
+}
+```
+### Int By Reference
+```
+package src;
+
+public class IntByReference extends Blueprint {
+    private int value;
+
+    public IntByReference(String optionsText, int value) {
+        super(optionsText);
+        this.value = value;
+    }
+
+    @Override
+    public String toString() {
+        return Integer.toString(this.value);
+    }
+
+    public void swapToLowHighOrder(IntByReference num) {
+        if (this.value > num.value) {
+            this.value = this.value - num.value;
+            num.value = this.value + num.value;
+            this.value = num.value - this.value;
+        }
+    }
+
+    public static void swapper(int n0, int n1) {
+        IntByReference a = new IntByReference(null, n0);
+        IntByReference b = new IntByReference(null, n1);
+        System.out.println("Before: " + a + " " + b);
+        a.swapToLowHighOrder(b);
+        System.out.println("After: " + a + " " + b);
+        System.out.println();
+    }
+
+    public void run() {
+        IntByReference.swapper(21, 16);
+        IntByReference.swapper(16, 21);
+        IntByReference.swapper(16, -1);
+    }
+}
+```
+
+### Matrix
+```
+package src;
+
+public class Matrix extends Blueprint {
+    private final int[][] matrix;
+
+    public Matrix(String optionsText, int[][] matrix) {
+        super(optionsText);
+        this.matrix = matrix;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder str = new StringBuilder();
+
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                if (matrix[i][j] == -1)
+                    str.append("  ");
+                else
+                    str.append(matrix[i][j] + " ");
+            }
+            str.append("\n");
+        }
+
+        return str.toString();
+    }
+
+    public String reverse() {
+        StringBuilder str = new StringBuilder();
+
+        for (int i = matrix.length;  0 < i; i--) {
+            for (int j =  matrix[i-1].length; 0 < j; j--) {
+                if (matrix[i-1][j-1]==-1) 
+                    str.append("  ");
+                else
+                    str.append(matrix[i-1][j-1] + " ");
+            }
+            str.append("\n");
+        }
+        
+        return str.toString();
+    }
+
+    static int[][] keypad() {
+        return new int[][] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 }, { -1, 0, -1 } };
+    }
+
+    static int[][] numbers() {
+        return new int[][] { { 0, 1 },
+                { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 },
+                { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 } };
+    }
+
+    public void run() {
+        Matrix m0 = new Matrix(null, keypad());
+        System.out.println("Keypad:");
+        System.out.println(m0);
+        System.out.println(m0.reverse());
+
+        Matrix m1 = new Matrix(null, numbers());
+        System.out.println("Numbers Systems:");
+        System.out.println(m1);
+        System.out.println(m1.reverse());
+    }
+}
+```
+
 ## Notes
 
 AP Computer Science A Journal
