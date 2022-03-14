@@ -1,7 +1,8 @@
 ## AP-Computer-Science-A
 
 ## Code Blocks
-### Menu
+> [Repl Link](https://replit.com/@SamosaSauce/AP-Computer-Science-A-1)
+### [Menu](https://github.com/raad1masum/AP-Computer-Science-A/blob/main/Main.java)
 ```java
 public static void menu(String banner, HashMap<Integer, Blueprint> options) {
    System.out.println(banner);
@@ -20,7 +21,7 @@ public static void menu(String banner, HashMap<Integer, Blueprint> options) {
    }
 }
 ```
-### Int By Reference
+### [Int By Reference](https://github.com/raad1masum/AP-Computer-Science-A/blob/main/src/IntByReference.java)
 ```java
 package src;
 
@@ -62,7 +63,7 @@ public class IntByReference extends Blueprint {
 }
 ```
 
-### Matrix
+### [Matrix](https://github.com/raad1masum/AP-Computer-Science-A/blob/main/src/Matrix.java)
 ```java
 package src;
 
