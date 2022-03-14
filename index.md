@@ -606,47 +606,6 @@ The Math class is part of the java.lang package.
 The Math class contains only static methods.
 The values returned from Math.random can be manipulated to produce a random int or double in a defined range.
 
-Week 2 PBL Tangible Artifacts
-Raadwan Masum
-
-Project Repository: https://github.com/raad1masum/AP-CSA-Tri-1-Project
-
-Git Commits
-
-
-
-Ideation
-
-
-
-Design
-
-
-
-About Page
-
-
-
-
-Scrum Board
-
-
-
-
-Week 2 Individual Check 2
-Raadwan Masum
-
-
-Test Corrections
-
-None, all answers were correct
-Most difficult question:
-
-
-Personal Work Plan for Computer Usage
-I plan to bring my laptop to school every day with all required software and tools installed
-
-
 Unit 1 Journal
 Raadwan Masum
 
