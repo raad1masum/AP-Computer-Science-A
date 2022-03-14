@@ -133,13 +133,35 @@ public class Matrix extends Blueprint {
 ```
 
 ## AP Exam Plan
-- [ ] Barron's Book
-- [ ] Random online tests
-- [ ] Code Code Code
+- Barron's Book
+- Random online tests
+- Code Code Code
 
 ## Notes
 
-AP Computer Science A Journal
+### Tech Talk 1
+Data Structures and Algorithms can be written using different paradigms. A paradigm is an approach or a methodology or a strategy to be followed for writing software applications.
+
+Imperative Paradigm
+In computer science, imperative programming is a programming paradigm that uses statements that change a program's state. An imperative program consists of commands for the computer to perform to achieve a result. Imperative programming focuses on describing "how" a program code works.
+
+Procedural programming is a type of imperative programming in which the program is built from one or more procedures (also termed subroutines or functions). Structured programming or modular programming in general have been promoted as techniques to improve the maintainability and overall quality of imperative programs.
+
+Python, which many used last year, is mostly know for its Procedural paradigm. Python is a versatile programming language with many user-defined data structures and algorithms.
+
+Object Oriented Paradigm
+Object Oriented programming (OOP) is a programming paradigm that relies on the concept of classes and objects. It is used to structure a software program into simple, reusable pieces of code blueprints (usually called classes), which are used to create individual instances of objects.
+
+OOP models complex things as reproducible, simple structures. Reusable, OOP classes can be used across programs by simply making an object. We have learned about many key aspects of OOP.
+
+Defining Classes with a Constructor and Instance variables
+Protecting information through Encapsulation (setters, getters)
+Extending Classes to maximize code reuse
+Creating subclass-specific behavior through polymorphism
+
+In both Imperative and OOP there are some Common Data Structures. Defining structure to hold and manipulate data is the key to all programming.
+
+### AP Computer Science A Journal
 Raadwan Masum
 
 Exam Format
