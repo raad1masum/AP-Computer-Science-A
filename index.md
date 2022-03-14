@@ -1,5 +1,8 @@
 ## AP-Computer-Science-A
 
+## Review Ticket
+[Week 0 Review Ticket](https://github.com/raad1masum/AP-Computer-Science-A/issues/1)
+
 ## Code Blocks
 
 > [Repl Link](https://replit.com/@SamosaSauce/AP-Computer-Science-A-1)
