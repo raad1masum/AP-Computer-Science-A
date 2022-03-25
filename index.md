@@ -136,6 +136,159 @@ public class Matrix extends Blueprint {
     }
 }
 ```
+### [TT1: Challenge 1](https://github.com/raad1masum/AP-Computer-Science-A/blob/main/src/T1C1.java)
+```java
+public class T1C1 extends Blueprint {
+    String optionsText;
+
+    public T1C1(String optionsText) {
+        super(optionsText);
+    }
+
+    public void run() {
+        ArrayList<String> arr = new ArrayList<String>();
+
+        for (String i : "Seven slimy snakes sallying slowly slithered southward".split(" ")) {
+            arr.add(i);
+        }
+
+        Queue<String> queue = new Queue<String>();
+
+        for (String i : arr) {
+            System.out.println("Enqueued Data: " + i);
+            queue.push(i);
+
+            System.out.print("is Counted: " + queue.length() + " ");
+
+            System.out.println(queue.display().toString().replaceAll("\\[|\\]", "")
+                    .replaceAll(" ", " ")
+                    .replaceAll(",", " "));
+        }
+
+        int iter = queue.length();
+        for (int i = 0; i <= iter; i++) {
+            System.out.println("Dequeued Data: " + queue.peak());
+            queue.pop();
+
+            System.out.println("is Counted: " + queue.length() + " ");
+
+            System.out.print("Data: ");
+            System.out.print(queue.display().toString().replaceAll("\\[|\\]", "")
+                    .replaceAll(" ", " ")
+                    .replaceAll(",", " "));
+
+            if (queue.peak() == null) {
+                System.out.println("null");
+            }
+        }
+    }
+}
+```
+### [TT2: Challenge 2](https://github.com/raad1masum/AP-Computer-Science-A/blob/main/src/T1C2.java)
+```java
+public class T1C2 extends Blueprint {
+    String optionsText;
+
+    public T1C2(String optionsText) {
+        super(optionsText);
+    }
+
+    public void run() {
+        List<Integer> list1 = Arrays.asList(1, 4, 5, 8);
+        List<Integer> list2 = Arrays.asList(2, 3, 6, 7);
+
+        Queue<Integer> Queue1 = new Queue<Integer>();
+        Queue<Integer> Queue2 = new Queue<Integer>();
+
+        Queue<Integer> output = new Queue<Integer>();
+
+        for (int num : list1) {
+            Queue1.push(num);
+        }
+
+        for (int num : list2) {
+            Queue2.push(num);
+        }
+
+        System.out.println("List 1: " + Queue1.display());
+        System.out.println("List 2: " + Queue2.display());
+
+        while ((Queue1.display() != null) || (Queue2.display() != null)) {
+            try {
+                if ((Queue1.peak() < Queue2.peak())) {
+                    output.push(Queue1.peak());
+                    Queue1.pop();
+                } else if ((Queue2.peak()) < Queue1.peak() || ((Queue1.peak()) == null) || (Queue2.peak() == null)) {
+                    output.push(Queue2.peak());
+                    Queue2.pop();
+                }
+            } catch (Exception e) {
+                if (Queue1.peak() == null) {
+                    output.push(Queue2.peak());
+                    Queue2.pop();
+                    break;
+                } else if (Queue2.peak() == null) {
+                    output.push(Queue1.peak());
+                    Queue1.pop();
+                    break;
+                }
+            }
+        }
+
+        System.out.println("Output: " + output.display());
+    }
+}
+```
+### [TT3: Challenge 3](https://github.com/raad1masum/AP-Computer-Science-A/blob/main/src/T1C3.java)
+```java
+public class T1C3 extends Blueprint {
+    String optionsText;
+
+    public T1C3(String optionsText) {
+        super(optionsText);
+    }
+
+    public void run() {
+        List<Integer> list = Arrays.asList(1, 2, 3, 4);
+        Queue<Integer> start = new Queue<Integer>();
+
+        for (int num : list) {
+            start.push(num);
+        }
+
+        Stack<Integer> output = new Stack<Integer>();
+
+        int m = start.length();
+        for (int i = 0; i < m; i++) {
+            output.add(start.peak());
+            start.pop();
+        }
+
+        ArrayList<Integer> output_list = new ArrayList<Integer>();
+
+        int r = output.length();
+        for (int i = 0; i < r; i++) {
+            output_list.add(output.peak());
+            output.delete();
+        }
+
+        System.out.print("Before: ");
+
+        System.out.println(list
+                .toString()
+                .replaceAll("\\[|\\]", "")
+                .replaceAll(" ", " ")
+                .replaceAll(",", " "));
+
+        System.out.print("After: ");
+        System.out.println(output_list
+                .toString()
+                .replaceAll("\\[|\\]", "")
+                .replaceAll(" ", " ")
+                .replaceAll(",", " "));
+    }
+}
+```
 
 ## AP Exam Plan
 - Barron's Book
