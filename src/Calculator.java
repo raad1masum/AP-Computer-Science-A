@@ -114,7 +114,7 @@ public class Calculator extends Blueprint {
         this.reverse_polish = new ArrayList<>();
 
         // stack is used to reorder for appropriate grouping and precedence
-        Stack tokenStack = new Stack();
+        Stack<String> tokenStack = new Stack<>();
         for (String token : tokens) {
             switch (token) {
                 // If left bracket push token on to stack
@@ -157,7 +157,7 @@ public class Calculator extends Blueprint {
     }
 
     private void rpnToResult() {
-        Stack stack = new Stack();
+        Stack<String> stack = new Stack<String>();
 
         for (String token : this.reverse_polish) {
             if (!isOperator(token))
