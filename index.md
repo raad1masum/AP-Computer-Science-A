@@ -3,6 +3,8 @@
 ## Review Ticket
 [Week 0 Review Ticket](https://github.com/raad1masum/AP-Computer-Science-A/issues/1)
 
+[Week 1 Review Ticket](https://github.com/raad1masum/AP-Computer-Science-A/issues/2)
+
 ## Code Blocks
 
 > [Repl Link](https://replit.com/@SamosaSauce/AP-Computer-Science-A-1)
@@ -318,6 +320,24 @@ Extending Classes to maximize code reuse
 Creating subclass-specific behavior through polymorphism
 
 In both Imperative and OOP there are some Common Data Structures. Defining structure to hold and manipulate data is the key to all programming.
+
+## Tech Talk 2
+Formerly, in class we have held hands and discussed Linked Lists (LL). We went over concepts in a Tri 2 Linked Lists TT. Please use this as a review.
+
+As stated, most "Data Structures" conversations usually begin with Arrays, which are built into most Computer Programming Languages. College Board has Units 6-8 which discuss Arrays, ArrayLists, and 2-Dimensional Arrays. Most Data Structures conversations continue with the discussions of Linked Lists which are the foundation for Stacks and Queues. This TT is about building your own data structures.
+
+
+Python, which many used last year, is mostly know for its Procedural paradigm. Python is a versatile programming language with many user-defined data structures and algorithms.
+
+Object Oriented Paradigm
+Object Oriented programming (OOP) is a programming paradigm that relies on the concept of classes and objects. It is used to structure a software program into simple, reusable pieces of code blueprints (usually called classes), which are used to create individual instances of objects.
+
+OOP models complex things as reproducible, simple structures. Reusable, OOP classes can be used across programs by simply making an object. We have learned about many key aspects of OOP.
+
+Defining Classes with a Constructor and Instance variables
+Protecting information through Encapsulation (setters, getters)
+Extending Classes to maximize code reuse
+Creating subclass-specific behavior through polymorphism
 
 ### AP Computer Science A Journal
 Raadwan Masum
