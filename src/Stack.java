@@ -26,6 +26,16 @@ public class Stack<T> {
             return null;
     }
 
+    public T pop() {
+        if (!list.isEmpty()) {
+            T out = list.get(list.size() - 1);
+            list.remove(list.size() - 1);
+            return out;
+        }
+        else
+            return null;
+    }
+
     public int length() {
         return list.size();
     }
