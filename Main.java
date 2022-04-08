@@ -43,6 +43,7 @@ public class Main {
         options.put(6, new T1C2("TT2 - Challenge 2"));
         options.put(7, new T1C3("TT3 - Challenge 3"));
         options.put(8, new Calculator("Calculator", "100 + 200  * 3"));
+        options.put(9, new BubbleSort("Bubble Sort"));
 
         while (true)
             menu("Menu", options);
