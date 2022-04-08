@@ -1,5 +1,7 @@
 package src;
 
+import java.time.Instant;
+import java.time.Duration;
 import java.util.ArrayList;
 
 public class BubbleSort extends BlueprintSort {
@@ -19,6 +21,7 @@ public class BubbleSort extends BlueprintSort {
         System.out.println();
 
         boolean sorted = true;
+        start = Instant.now();
         for (int i = 1; i < data.size(); i++) {
             for (int j = 1; j < data.size(); j++) {
                 comparisons++;
@@ -33,11 +36,12 @@ public class BubbleSort extends BlueprintSort {
             if (sorted)
                 break;
         }
+        timeElapsed = Duration.between(start, Instant.now());
 
         for (int i = 0; i < data.size(); i++)
             System.out.print(data.get(i) + " ");
         System.out.println();
 
-        System.out.println("Comparisons: " + comparisons + " Sorts: " + swaps);
+        System.out.println("Time: " + timeElapsed.getNano() + " Nanoseconsd, Comparisons: " + comparisons + ", Sorts: " + swaps);
     }
 }
