@@ -1,9 +1,13 @@
 package src;
 
+import java.time.Duration;
+import java.time.Instant;
+
 public abstract class BlueprintSort extends Blueprint {
     String optionsText;
-    int comparisons;
-    int swaps;
+    Instant start;
+    Duration timeElapsed;
+    int comparisons, swaps;
 
     public BlueprintSort(String optionsText) {
         super(optionsText);
