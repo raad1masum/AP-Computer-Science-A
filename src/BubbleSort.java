@@ -21,11 +21,13 @@ public class BubbleSort extends BlueprintSort {
         boolean sorted = true;
         for (int i = 1; i < data.size(); i++) {
             for (int j = 1; j < data.size(); j++) {
+                comparisons++;
                 if (data.get(j) < data.get(j - 1)) {
                     sorted = false;
                     int tmp = data.get(j - 1);
                     data.set(j - 1, data.get(j));
                     data.set(j, tmp);
+                    swaps++;
                 }
             }
             if (sorted)
@@ -36,5 +38,6 @@ public class BubbleSort extends BlueprintSort {
             System.out.print(data.get(i) + " ");
         System.out.println();
 
+        System.out.println("Comparisons: " + comparisons + " Sorts: " + swaps);
     }
 }
