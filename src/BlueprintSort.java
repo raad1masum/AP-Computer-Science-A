@@ -2,6 +2,7 @@ package src;
 
 import java.time.Duration;
 import java.time.Instant;
+import java.util.ArrayList;
 
 public abstract class BlueprintSort extends Blueprint {
     String optionsText;
@@ -14,6 +15,7 @@ public abstract class BlueprintSort extends Blueprint {
         this.optionsText = optionsText;
     }
 
+    public abstract int[] getStats(ArrayList<Integer> data);
     public abstract void run();
 
     public String getOptionsText() {
