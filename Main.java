@@ -35,18 +35,16 @@ public class Main {
     static public void main(String[] args) {
         HashMap<Integer, Blueprint> options = new HashMap<Integer, Blueprint>();
         options.put(0, new Exit("Exit"));
-        options.put(1, new Test("Test Option"));
-        options.put(2, new TestNew("Test New Option"));
-        options.put(3, new IntByReference("Int By Reference", 0));
-        options.put(4, new Matrix("Matrix", new int[][] {{0},{0}}));
-        options.put(5, new T1C1("TT1 - Challenge 1"));
-        options.put(6, new T1C2("TT2 - Challenge 2"));
-        options.put(7, new T1C3("TT3 - Challenge 3"));
-        options.put(8, new Calculator("Calculator", "100 + 200  * 3"));
-        options.put(9, new BubbleSort("Bubble Sort"));
-        options.put(10, new SelectionSort("Selection Sort"));
-        options.put(11, new InsertionSort("Insertion Sort"));
-        options.put(12, new MergeSort("Merge Sort"));
+        options.put(1, new IntByReference("Int By Reference", 0));
+        options.put(3, new Matrix("Matrix", new int[][] {{0},{0}}));
+        options.put(4, new T1C1("TT1 - Challenge 1"));
+        options.put(5, new T1C2("TT2 - Challenge 2"));
+        options.put(6, new T1C3("TT3 - Challenge 3"));
+        options.put(7, new Calculator("Calculator", "100 + 200  * 3"));
+        options.put(8, new BubbleSort("Bubble Sort"));
+        options.put(9, new SelectionSort("Selection Sort"));
+        options.put(10, new InsertionSort("Insertion Sort"));
+        options.put(11, new MergeSort("Merge Sort"));
 
         while (true)
             menu("Menu", options);
