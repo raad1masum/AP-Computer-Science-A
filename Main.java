@@ -36,11 +36,12 @@ public class Main {
         HashMap<Integer, Blueprint> options = new HashMap<Integer, Blueprint>();
         options.put(0, new Exit("Exit"));
         options.put(1, new IntByReference("Int By Reference", 0));
-        options.put(3, new Matrix("Matrix", new int[][] {{0},{0}}));
-        options.put(4, new T1C1("TT1 - Challenge 1"));
-        options.put(5, new T1C2("TT2 - Challenge 2"));
-        options.put(6, new T1C3("TT3 - Challenge 3"));
-        options.put(7, new Calculator("Calculator", "100 + 200  * 3"));
+        options.put(2, new Matrix("Matrix", new int[][] {{0},{0}}));
+        options.put(3, new T1C1("TT1 - Challenge 1"));
+        options.put(4, new T1C2("TT2 - Challenge 2"));
+        options.put(5, new T1C3("TT3 - Challenge 3"));
+        options.put(6, new Calculator("Calculator", "100 + 200  * 3"));
+        options.put(7, new Sorts("Sort Comparison"));
         options.put(8, new BubbleSort("Bubble Sort"));
         options.put(9, new SelectionSort("Selection Sort"));
         options.put(10, new InsertionSort("Insertion Sort"));
