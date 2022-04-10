@@ -46,6 +46,7 @@ public class Main {
         options.put(9, new BubbleSort("Bubble Sort"));
         options.put(10, new SelectionSort("Selection Sort"));
         options.put(11, new InsertionSort("Insertion Sort"));
+        options.put(12, new MergeSort("Merge Sort"));
 
         while (true)
             menu("Menu", options);
