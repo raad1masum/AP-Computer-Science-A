@@ -10,6 +10,29 @@ public class SelectionSort extends BlueprintSort {
     public SelectionSort(String optionsText) {
         super(optionsText);
     }
+    
+    @Override
+    public int[] getStats(ArrayList<Integer> data) {
+        start = Instant.now();
+        for (int i = 0; i < data.size() - 1; i++) {
+            int min = i;
+            for (int j = i + 1; j < data.size(); j++) {
+                comparisons++;
+                if (data.get(j) < data.get(min))
+                    min = j;
+            }
+            if (min != i) {
+                int tmp = data.get(i);
+                data.set(i, data.get(min));
+                data.set(min, tmp);
+                swaps++;
+            }
+        }
+        timeElapsed = Duration.between(start, Instant.now());
+
+        int[] out = {timeElapsed.getNano(), comparisons, swaps};
+        return out;
+    }
 
     @Override
     public void run() {

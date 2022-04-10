@@ -12,6 +12,26 @@ public class InsertionSort extends BlueprintSort {
     }
 
     @Override
+    public int[] getStats(ArrayList<Integer> data) {
+        start = Instant.now();
+        for (int i = 1; i < data.size(); i++) {
+            int j = i;
+            while (j > 0 && data.get(j) < data.get(j - 1)) {
+                comparisons++;
+                int tmp = data.get(j - 1);
+                data.set(j - 1, data.get(j));
+                data.set(j, tmp);
+                swaps++;
+                j--;
+            }
+        }
+        timeElapsed = Duration.between(start, Instant.now());
+        
+        int[] out = {timeElapsed.getNano(), comparisons, swaps};
+        return out;
+    }
+
+    @Override
     public void run() {
         for (int i = 0; i < 5000; i++)
             data.add((int) (Math.random() * 50000));

@@ -10,6 +10,16 @@ public class MergeSort extends BlueprintSort {
     public MergeSort(String optionsText) {
         super(optionsText);
     }
+    
+    @Override
+    public int[] getStats(ArrayList<Integer> data) {
+        start = Instant.now();
+        sort(data);
+        timeElapsed = Duration.between(start, Instant.now());
+
+        int[] out = {timeElapsed.getNano(), comparisons, swaps};
+        return out;
+    }
 
     public void sort(ArrayList<Integer> data) {
         if (data.size() > 1) {
