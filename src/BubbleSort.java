@@ -42,6 +42,6 @@ public class BubbleSort extends BlueprintSort {
             System.out.print(data.get(i) + " ");
         System.out.println();
 
-        System.out.println("Time: " + timeElapsed.getNano() + " Nanoseconsd, Comparisons: " + comparisons + ", Sorts: " + swaps);
+        System.out.println("Time: " + timeElapsed.getNano() + " Nanoseconds, Comparisons: " + comparisons + ", Sorts: " + swaps);
     }
 }
