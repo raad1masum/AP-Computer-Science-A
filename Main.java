@@ -45,6 +45,7 @@ public class Main {
         options.put(8, new Calculator("Calculator", "100 + 200  * 3"));
         options.put(9, new BubbleSort("Bubble Sort"));
         options.put(10, new SelectionSort("Selection Sort"));
+        options.put(11, new InsertionSort("Insertion Sort"));
 
         while (true)
             menu("Menu", options);
