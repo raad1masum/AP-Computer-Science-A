@@ -12,8 +12,3 @@ filename: index.html
 [Week 2 Review Ticket](https://github.com/raad1masum/AP-Computer-Science-A/issues/3)
 
 [Week 3 Review Ticket](https://github.com/raad1masum/AP-Computer-Science-A/issues/4)
-
-## AP Exam Plan
-- Barron's Book
-- Random online tests
-- Code Code Code
