@@ -46,6 +46,7 @@ public class Main {
         options.put(9, new SelectionSort("Selection Sort"));
         options.put(10, new InsertionSort("Insertion Sort"));
         options.put(11, new MergeSort("Merge Sort"));
+        options.put(12, new CustomArray("Custom Array", 10));
 
         while (true)
             menu("Menu", options);
