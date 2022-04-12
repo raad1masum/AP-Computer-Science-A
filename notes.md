@@ -4,10 +4,10 @@ layout: template
 filename: notes.html
 --- 
 # Table of Contents
-1. [Tech Talk 0 - Data Structures](#tech-talk-1)
-2. [Tech Talk 1 - Linked Lists](#tech-talk-2)
-3. [Tech Talk 2 - Calculator](#tech-talk-3)
-4. [Tech Talk 3 - Sorts](#tech-talk-4)
+1. [Tech Talk 0 - Data Structures](#tech-talk-0---data-structures)
+2. [Tech Talk 1 - Linked Lists](#tech-talk-1---linked-lists)
+3. [Tech Talk 2 - Calculator](#tech-talk-2---calculator)
+4. [Tech Talk 3 - Sorts](#tech-talk-3---sorts)
 
 ## Tech Talk 0 - Data Structures
 Data Structures and Algorithms can be written using different paradigms. A paradigm is an approach or a methodology or a strategy to be followed for writing software applications.
@@ -58,3 +58,28 @@ Reverse Polish notation (RPN) is a method for representing expressions in which 
 For example, the following RPN expression will produce the sum of 2 and 3, namely 5: 2 3 +.
 
 Reverse Polish notation, also known as postfix notation, contrasts with the "infix notation" of standard arithmetic expressions in which the operator symbol appears between the operands.
+
+## Tech Talk 3 - Sorts
+**Bubble Sort**
+- O( *n²* )
+- Repeatedly swap adjacent elements if they are in wrong order
+- Comparison-based algorithm where adjacent elements are compared
+- Not suitable for large data sets
+
+**Selection Sort**
+- O( *n²* )
+- Repeatedly finding the minimum element and putting it at the beginning
+- Comparison-based algorithm in which the list is divided into two parts
+- Not suitable for large data sets
+
+**Insertion Sort**
+- O( *n²* )
+- Builds the final sorted array one item at a time
+- Array is searched sequentially and unsorted items are inserted into the sorted list
+- Not suitable for large data sets
+
+**Merge Sort**
+- O( *n log n* )
+- Based on divide and conquer technique
+- Divides the array into equal halves and then combines them in a sorted manner
+- Works well with large data sets
