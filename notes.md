@@ -4,12 +4,12 @@ layout: template
 filename: notes.html
 --- 
 # Table of Contents
-1. [Tech Talk 1 - Data Structures](#tech-talk-1)
-2. [Tech Talk 2 - Linked Lists](#tech-talk-2)
-3. [Tech Talk 3 - Calculator](#tech-talk-3)
-4. [Tech Talk 4 - Sorts](#tech-talk-4)
+1. [Tech Talk 0 - Data Structures](#tech-talk-1)
+2. [Tech Talk 1 - Linked Lists](#tech-talk-2)
+3. [Tech Talk 2 - Calculator](#tech-talk-3)
+4. [Tech Talk 3 - Sorts](#tech-talk-4)
 
-## Tech Talk 1
+## Tech Talk 0 - Data Structures
 Data Structures and Algorithms can be written using different paradigms. A paradigm is an approach or a methodology or a strategy to be followed for writing software applications.
 
 Imperative Paradigm
@@ -31,7 +31,7 @@ Creating subclass-specific behavior through polymorphism
 
 In both Imperative and OOP there are some Common Data Structures. Defining structure to hold and manipulate data is the key to all programming.
 
-## Tech Talk 2
+## Tech Talk 1 - Linked Lists
 Formerly, in class we have held hands and discussed Linked Lists (LL). We went over concepts in a Tri 2 Linked Lists TT. Please use this as a review.
 
 As stated, most "Data Structures" conversations usually begin with Arrays, which are built into most Computer Programming Languages. College Board has Units 6-8 which discuss Arrays, ArrayLists, and 2-Dimensional Arrays. Most Data Structures conversations continue with the discussions of Linked Lists which are the foundation for Stacks and Queues. This TT is about building your own data structures.
@@ -49,7 +49,7 @@ Protecting information through Encapsulation (setters, getters)
 Extending Classes to maximize code reuse
 Creating subclass-specific behavior through polymorphism
 
-## Tech Talk 3
+## Tech Talk 2 - Calculator
 In mathematics, an expression or mathematical expression is a finite combination of symbols that is well-formed according to rules that depend on the context.
 In computers, expression can be hard to calculate with precedence rules. In computer math we often convert strings into Reverse Polish Notation (RPN, 3 + 4 becomes 3 4 +) using the Shunting-yard algorithm. Review Wikipedia diagram and the code and you will see the need for a Stack.
 
