@@ -60,6 +60,10 @@ For example, the following RPN expression will produce the sum of 2 and 3, namel
 Reverse Polish notation, also known as postfix notation, contrasts with the "infix notation" of standard arithmetic expressions in which the operator symbol appears between the operands.
 
 ## Tech Talk 3 - Sorts
+> **Big O notation** is a mathematical notation that describes the limiting behavior of a function when the argument tends towards a particular value or infinity.
+
+<img width="60%" src="https://miro.medium.com/max/1400/1*yiyfZodqXNwMouC0-B0Wlg.png">
+
 **Bubble Sort**
 - O( *n²* )
 - Repeatedly swap adjacent elements if they are in wrong order
