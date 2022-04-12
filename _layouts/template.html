@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>{{ page.title }}</title>
+    </head>
+    <body>
+        <header class="page-header" role="banner">
+            <h1 class="project-name">Raadwan's Tri 3 AP CSA Portfolio</h1>
+            <h2 class="project-tagline"></h2>
+            {% for page in site.pages %}
+            <a href= {{ page.filename }} class="btn">{{ page.title }}</a>
+            {% endfor %}
+        </header>
+
+        <main id="content" class="main-content" role="main">
+            {{ content }}
+        </main>
+    </body>
+</html>
