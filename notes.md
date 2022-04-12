@@ -3,6 +3,11 @@ title: Tech Talk Notes
 layout: template
 filename: notes.html
 --- 
+# Table of Contents
+1. [Tech Talk 1 - Data Structures](#tech-talk-1)
+2. [Tech Talk 2 - Linked Lists](#tech-talk-2)
+3. [Tech Talk 3 - Calculator](#tech-talk-3)
+4. [Tech Talk 4 - Sorts](#tech-talk-4)
 
 ## Tech Talk 1
 Data Structures and Algorithms can be written using different paradigms. A paradigm is an approach or a methodology or a strategy to be followed for writing software applications.
