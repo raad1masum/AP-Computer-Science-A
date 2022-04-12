@@ -1,7 +1,7 @@
 ---
-title: AP-Computer-Science-A
+title: Home
 layout: template
-filename: index.md
+filename: index.html
 --- 
 
 ## AP-Computer-Science-A
