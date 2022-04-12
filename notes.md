@@ -87,3 +87,10 @@ Reverse Polish notation, also known as postfix notation, contrasts with the "inf
 - Based on divide and conquer technique
 - Divides the array into equal halves and then combines them in a sorted manner
 - Works well with large data sets
+
+### Sorts Analysis
+> Data averaged from 12 runs using 5000 elements each
+
+<img src="img/sortsanalysis.png">
+
+**Conclusion:** Of these four sorting algorithms, merge sort is best suited for large data sets. Averged over 12 runs with 5000 elements, merge sort consistiently outperforms the other three algorithms. However, Big O time complexity tells us that the other three algorithms would be more efficient with smaller data sets. If we were to re-run this test with only 10 elements, for example, the other sorting algorithms would outperform merge sort. One interesting thing I found out with this experiment is that, even though merge sort had more sorts than selection sort, it still had a faster raw runtime. This proves that merge sort is not only a faster algorithm, but it is also more efficient.
