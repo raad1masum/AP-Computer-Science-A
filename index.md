@@ -16,6 +16,6 @@ filename: index.html
 ## AP Exam Study Plan
 
 ### Methods of Study
-- [ ] Online Exams
-- [ ] Barron's Book
-- [ ] AP Classroom Practice Exams
+- Online Exams
+- Barron's Book
+- AP Classroom Practice Exams
