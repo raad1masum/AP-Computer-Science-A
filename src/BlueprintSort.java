@@ -15,9 +15,13 @@ public abstract class BlueprintSort extends Blueprint {
         this.optionsText = optionsText;
     }
 
+    // abstract method for getting stats
     public abstract int[] getStats(ArrayList<Integer> data);
+
+    // standard abstract run method
     public abstract void run();
 
+    // simple abstract method for options text
     public String getOptionsText() {
         return optionsText;
     }
